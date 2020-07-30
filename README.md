@@ -1,1 +1,1 @@
-Project clone app Foody on Android
+Project clone app Foody on Android, using SQLite to store data
