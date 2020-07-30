@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuAndImageDetailActivity"
+    android:weightSum="10"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:background="#FF0000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/buttonBackInMenuAndImage"
+            android:background="#FF0000"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back1"/>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/statusbar"
+            app:tabTextAppearance="@style/MyCustomTextAppearance"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            style="@style/TabDetail"
+            android:id="@+id/tablayout_id"
+            android:layout_marginBottom="1dp">
+
+        </com.google.android.material.tabs.TabLayout>
+        <Button
+            android:background="#FF0000"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_weight="0.5"
+        android:background="#ecf0f1"
+        android:autoSizeTextType="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="#E80C0C"
+        android:textStyle="bold"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
